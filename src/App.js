@@ -1,15 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { Login } from './pages/Login';
+import { Profile } from './pages/Profile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> Soy lo que subirás</h1>
-        <h2> Comprobando que suba cambios también</h2>
-      </header>
-    </div>
+    <>
+    <Routes>
+    <Route path="/" element={<Login/>}/>
+
+    <Route path="/profile" element={<Profile/>}/>
+
+
+    
+
+
+    </Routes>
+
+      
+      
+    </>
   );
 }
 
